@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.CurrencyConverterController">
+   <children>
+      <GridPane hgap="10.0" prefHeight="400.0" prefWidth="600.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="124.0" minWidth="10.0" prefWidth="65.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0" prefWidth="193.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="186.0" minWidth="10.0" prefWidth="186.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="98.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lbl_title" text="%title" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cb_from" prefHeight="25.0" prefWidth="197.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ComboBox fx:id="cb_to" prefHeight="25.0" prefWidth="197.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <Label fx:id="lbl_from" alignment="CENTER" prefHeight="35.0" prefWidth="39.0" text="\$">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tf_from" prefHeight="39.0" prefWidth="152.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <children>
+                  <Label fx:id="lbl_to" alignment="CENTER" prefHeight="35.0" prefWidth="41.0" text="\$">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tf_to" prefHeight="39.0" prefWidth="143.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <Text fx:id="txt_instruction" strokeType="OUTSIDE" strokeWidth="0.0" text="%instruction" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.MainWindowController">
+    <top>
+        <HBox prefHeight="26.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets left="5.0" top="5.0" />
+            </BorderPane.margin>
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/global.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <ChoiceBox fx:id="cb_language" prefHeight="32.0" prefWidth="100.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </ChoiceBox>
+         </children>
+        </HBox>
+    </top>
+   <center>
+      <StackPane fx:id="sp_center" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
